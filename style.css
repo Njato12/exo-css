@@ -40,9 +40,11 @@ header {
     height: 100vh;
     width: 100%;
     background-image: url(Hero\ \(1\).png);
+    background-size: cover;
     background-repeat: no-repeat;
     display: grid;
     grid-template-columns: 1fr 1fr;
+
 }
 
 .big-title {
@@ -361,6 +363,7 @@ button {
     width: 100%;
     height: 300px;
     background-image: url(unsplash_MP0bgaS_d1c.png);
+    background-size: cover;
 }
 
 .parent-ads {
@@ -427,9 +430,15 @@ button {
     margin-bottom: 40px;
 }
 
-.list-card {
+.ls-ca {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 32px;
+}
+
+.n-b {
+    width: 90%;
+    margin-left: 8%;
 }
 
 #exp {
@@ -466,47 +475,35 @@ button {
 }
 
 .nav-bot {
-    margin-top: 32px;
-    margin-left: 33%;
-    margin-bottom: 138px;
     display: flex;
+    justify-content: flex-end;
+    margin-right: 6%;
 }
 
 .but-back {
-    width: 32.5%;
+    width: 25%;
     height: 64px;
-    background-color: #292E3D;
+    background-color: #000;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .but-next {
-    width: 32.5%;
+    width: 25%;
     height: 64px;
-    background-color: #292E3D;
+    background-color: #000;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.nav-b {
-    width: 16.5%;
-    height: 64px;
+.but-nav {
+    width: 20%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 0px 33px 0px 33px;
-}
-
-.b-back {
-    background: none;
-    border: none;
-}
-
-.b-next {
-    background: none;
-    border: none;
+    gap: 16px;
 }
 
 .CTA {
@@ -514,7 +511,6 @@ button {
     height: 632px;
     background-color: #F6F8F7;
 }
-
 
 .title-form {
     margin-top: 60px;
@@ -708,6 +704,117 @@ footer {
     color: #ffff;
     font-size: 16px;
     margin-left: 10%;
+
+
+}
+
+@media(max-width:1280px) {
+    header {
+        width: 100%;
+    }
+
+    .hero {
+        width: 100%;
+    }
+
+    .reasons {
+        width: 100%;
+    }
+
+    .img-font {
+        margin-left: 0;
+        width: 70%;
+
+    }
+
+    .img-ads {
+        width: 99.5px;
+    }
+
+    .container-about {
+        margin-left: 75%;
+    }
+
+    .img-ads {
+        width: 100%;
+    }
+
+    .n-b {
+        width: 90%;
+        margin-left: 7%;
+    }
+
+    .CTA {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+}
+
+@media (max-width:1024px) {
+    .int-stat {
+        font-size: 30px;
+        color: #2947A9;
+    }
+
+    .text-stats {
+        font-size: 15px;
+        color: #2947A9;
+    }
+
+}
+
+@media (max-width:768px) {
+    .img-font {
+        margin-left: 0;
+        width: 98.5%;
+    }
+
+    .container-about {
+        background-color: #2947A9;
+        width: 83.5%;
+        height: 250px;
+        padding: 50px 60px 60px 40px;
+        margin-top: 502px;
+        margin-left: 3%;
+
+    }
+
+    .button-about {
+        width: 40%;
+        height: 53px;
+        font-size: 18px;
+        background-color: #ffff;
+        border-radius: 6px;
+        margin-top: 4px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .prg {
+        color: #ffff;
+        font-size: 15px;
+    }
+
+    .six-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 96px;
+        margin-top: 36px;
+        margin-left: 8%;
+        margin-bottom: 76px;
+    }
+
+    .project-card {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 32px;
+        margin-left: 0%;
+    }
+
 
 
 }
